@@ -22,7 +22,8 @@
     "contact": "asd",
     "priority": "Medium",
     "date": "2026-01-22",
-    "status": "resolved"
+    "status": "resolved",
+    "deletedAt": "2026-01-28T00:53:17.655Z"
   },
   {
     "id": 1769058882253,
@@ -38,7 +39,8 @@
     "location": "asdad",
     "device": "asd",
     "ip": "",
-    "status": "resolved"
+    "status": "resolved",
+    "deletedAt": "2026-01-28T00:53:19.623Z"
   },
   {
     "id": 1769388005513,
@@ -50,7 +52,8 @@
     "contact": "1232131",
     "priority": "Low",
     "date": "2026-01-26",
-    "status": "resolved"
+    "status": "resolved",
+    "deletedAt": "2026-01-28T00:53:20.923Z"
   },
   {
     "id": 1769396877263,
@@ -62,7 +65,8 @@
     "contact": "a",
     "priority": "Medium",
     "date": "2026-01-26",
-    "status": "resolved"
+    "status": "resolved",
+    "deletedAt": "2026-01-28T00:53:22.388Z"
   },
   {
     "id": 1769397405814,
@@ -86,6 +90,37 @@
     "department": "asd",
     "contact": "2112",
     "priority": "High",
-    "date": "2026-01-26"
+    "date": "2026-01-26",
+    "status": "resolved",
+    "deletedAt": "2026-01-28T00:53:23.715Z"
+  },
+  {
+    "id": 1769561666904,
+    "category": "network",
+    "title": "Network Request",
+    "description": "Internet connection",
+    "requestId": "744666",
+    "requester": "Genesis",
+    "department": "ASD",
+    "contact": "091010101010",
+    "priority": "High",
+    "date": "2026-01-28",
+    "issueType": "No Internet",
+    "location": "ASD",
+    "device": "pc",
+    "ip": "",
+    "status": "resolved"
+  },
+  {
+    "id": 1769561695661,
+    "category": "carpentry",
+    "title": "Carpentry Request",
+    "description": "Need new table ",
+    "requestId": "103745",
+    "requester": "yong",
+    "department": "ASD",
+    "contact": "0910101010",
+    "priority": "High",
+    "date": "2026-01-31"
   }
 ]

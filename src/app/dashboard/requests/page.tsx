@@ -162,7 +162,12 @@ export default function RequestsPage() {
     }
     if (searchTerm && searchTerm.trim() !== "") {
       const title = (r.title || "").toString().toLowerCase();
-      if (!title.includes(searchTerm.trim().toLowerCase())) return false;
+      const requestId = (r.requestId || "").toString();
+      if (
+        !title.includes(searchTerm.trim().toLowerCase()) &&
+        !requestId.includes(searchTerm.trim())
+      )
+        return false;
     }
     return true; // passes filters
   });
@@ -466,6 +471,7 @@ export default function RequestsPage() {
         <table className="w-full">
           <thead className="bg-gray-900 text-white">
             <tr>
+              <th className="px-6 py-4 text-left font-semibold">Request ID</th>
               <th className="px-6 py-4 text-left font-semibold">Title</th>
               <th className="px-6 py-4 text-left font-semibold">
                 <button
@@ -548,6 +554,7 @@ export default function RequestsPage() {
           <tbody>
             {currentPageRequests.map((r) => (
               <tr key={r.id} className="border-b hover:bg-gray-50 transition">
+                <td className="px-6 py-4 font-mono text-gray-800">{r.requestId}</td>
                 <td className="px-6 py-4 font-medium text-gray-800">{r.title}</td>
                 <td className="px-6 py-4 text-gray-700">
                   <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">

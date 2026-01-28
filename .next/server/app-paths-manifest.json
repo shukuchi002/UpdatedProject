@@ -1,0 +1,12 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/auth/logout/route": "app/api/auth/logout/route.js",
+  "/api/login/route": "app/api/login/route.js",
+  "/dashboard/create-request/page": "app/dashboard/create-request/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/dashboard/requests/api/route": "app/dashboard/requests/api/route.js",
+  "/dashboard/requests/page": "app/dashboard/requests/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js"
+}

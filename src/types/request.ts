@@ -1,7 +1,8 @@
 export type RequestType = {
   id: number;
+  requestId: string; // 6-digit code, fixed
   category: string;
-  title: string;
+  title: string; // fixed, based on category
   description: string;
   requester?: string;
   department?: string;

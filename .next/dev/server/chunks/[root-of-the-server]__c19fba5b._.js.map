@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":["file:///home/admin-icts/LatestProject/src/app/api/login/route.ts"],"sourcesContent":["import { NextResponse } from \"next/server\";\n\nexport async function POST(request: Request) {\n  const { username, password } = await request.json();\n\n  if (username === \"admin\" && password === \"1234\") {\n    return NextResponse.json({ success: true });\n  }\n\n  return NextResponse.json(\n    { success: false, message: \"Invalid credentials\" },\n    { status: 401 }\n  );\n}\n"],"names":[],"mappings":";;;;AAAA;;AAEO,eAAe,KAAK,OAAgB;IACzC,MAAM,EAAE,QAAQ,EAAE,QAAQ,EAAE,GAAG,MAAM,QAAQ,IAAI;IAEjD,IAAI,aAAa,WAAW,aAAa,QAAQ;QAC/C,OAAO,gJAAY,CAAC,IAAI,CAAC;YAAE,SAAS;QAAK;IAC3C;IAEA,OAAO,gJAAY,CAAC,IAAI,CACtB;QAAE,SAAS;QAAO,SAAS;IAAsB,GACjD;QAAE,QAAQ;IAAI;AAElB"}}]
+}

@@ -11,6 +11,11 @@ import {
 } from "@/lib/validation";
 import { addToast } from "@/lib/toast";
 
+function capitalize(str: string) {
+  if (!str) return "";
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
 type Category =
   | ""
   | "network"
@@ -21,6 +26,7 @@ type Category =
 
 export default function CreateRequestPage() {
   const [category, setCategory] = useState<Category>("");
+  const [requestId] = useState<string>(() => Math.floor(100000 + Math.random() * 900000).toString());
   const [errors, setErrors] = useState<Record<string, string>>({});
   const router = useRouter();
 
@@ -36,14 +42,18 @@ export default function CreateRequestPage() {
       if (value !== null) {
         const strValue = value.toString();
         formData[key] = strValue;
-
-        // Validate each field
-        const validation = validateFieldInput(key, strValue);
-        if (!validation.valid && validation.error) {
-          newErrors[key] = validation.error;
+        // Validate each field except title and requestId (fixed)
+        if (key !== "title" && key !== "requestId") {
+          const validation = validateFieldInput(key, strValue);
+          if (!validation.valid && validation.error) {
+            newErrors[key] = validation.error;
+          }
         }
       }
     });
+    // Add fixed fields
+    formData["requestId"] = requestId;
+    formData["title"] = category ? `${capitalize(category)} Request` : "Request";
 
     // Check for validation errors
     if (Object.keys(newErrors).length > 0) {
@@ -113,9 +123,16 @@ export default function CreateRequestPage() {
         {category ? (
           <form className="space-y-4" onSubmit={handleSubmit}>
             <Input
+              name="requestId"
+              label="Request ID"
+              value={requestId}
+              readOnly={true}
+            />
+            <Input
               name="title"
               label="Request Title"
-              error={errors.title}
+              value={category ? `${capitalize(category)} Request` : "Request"}
+              readOnly={true}
             />
             <Textarea
               name="description"
@@ -199,6 +216,8 @@ type InputProps = {
   name: string;
   error?: string;
   onPhoneInput?: boolean;
+  value?: string;
+  readOnly?: boolean;
 };
 
 function Input({
@@ -207,6 +226,8 @@ function Input({
   name,
   error,
   onPhoneInput = false,
+  value,
+  readOnly = false,
 }: InputProps) {
   const inputType = getFieldInputType(name) || type;
   const pattern = getFieldPattern(name);
@@ -235,10 +256,15 @@ function Input({
             ? "Phone number can only contain numbers, dashes, parentheses, plus sign, and spaces"
             : ""
         }
+        value={value}
+        readOnly={readOnly}
       />
       {error && <p className="text-red-500 text-sm mt-1">{error}</p>}
     </div>
   );
+function capitalize(str: string) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
 }
 
 type TextareaProps = {

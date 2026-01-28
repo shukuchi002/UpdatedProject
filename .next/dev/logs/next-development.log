@@ -1,0 +1,483 @@
+[00:00:01.034] Server  LOG     ✓ Ready in 794ms
+[00:00:06.750] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:43.509] Server  LOG     ✓ Compiled in 93ms
+[00:12:07.112] Server  LOG     ✓ Compiled in 25ms
+[00:12:21.024] Server  LOG     ✓ Compiled in 56ms
+[00:12:36.910] Browser ERROR   uncaughtError: ReferenceError: capitalize is not defined
+[00:13:30.519] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:33.058] Browser ERROR   uncaughtError: ReferenceError: capitalize is not defined
+[00:14:20.942] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:22.866] Browser ERROR   uncaughtError: ReferenceError: capitalize is not defined
+[00:15:32.925] Server  LOG     ✓ Compiled in 128ms
+[00:15:33.029] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:7:1
+Ecmascript file had an error
+   5 | }
+   6 |
+>  7 | "use client";
+     | ^^^^^^^^^^^^^
+   8 |
+   9 | import { useState } from "react";
+  10 | import { useRouter } from "next/navigation";
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:15:33.029] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:10:10
+Ecmascript file had an error
+   8 |
+   9 | import { useState } from "react";
+> 10 | import { useRouter } from "next/navigation";
+     |          ^^^^^^^^^
+  11 | import { RequestType } from "@/types/request";
+  12 | import {
+  13 |   getFieldInputType,
+
+You're importing a component that needs `useRouter`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:15:33.029] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:9:10
+Ecmascript file had an error
+   7 | "use client";
+   8 |
+>  9 | import { useState } from "react";
+     |          ^^^^^^^^
+  10 | import { useRouter } from "next/navigation";
+  11 | import { RequestType } from "@/types/request";
+  12 | import {
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:15:51.968] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:7:1
+Ecmascript file had an error
+   5 | }
+   6 |
+>  7 | "use client";
+     | ^^^^^^^^^^^^^
+   8 |
+   9 | import { useState } from "react";
+  10 | import { useRouter } from "next/navigation";
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:15:51.968] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:10:10
+Ecmascript file had an error
+   8 |
+   9 | import { useState } from "react";
+> 10 | import { useRouter } from "next/navigation";
+     |          ^^^^^^^^^
+  11 | import { RequestType } from "@/types/request";
+  12 | import {
+  13 |   getFieldInputType,
+
+You're importing a component that needs `useRouter`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:15:51.968] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:9:10
+Ecmascript file had an error
+   7 | "use client";
+   8 |
+>  9 | import { useState } from "react";
+     |          ^^^^^^^^
+  10 | import { useRouter } from "next/navigation";
+  11 | import { RequestType } from "@/types/request";
+  12 | import {
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:15:54.386] Server  ERROR   ⨯ ./src/app/dashboard/create-request/page.tsx:7:1
+Ecmascript file had an error
+   5 | }
+   6 |
+>  7 | "use client";
+     | ^^^^^^^^^^^^^
+   8 |
+   9 | import { useState } from "react";
+  10 | import { useRouter } from "next/navigation";
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+
+
+
+./src/app/dashboard/create-request/page.tsx:10:10
+Ecmascript file had an error
+   8 |
+   9 | import { useState } from "react";
+> 10 | import { useRouter } from "next/navigation";
+     |          ^^^^^^^^^
+  11 | import { RequestType } from "@/types/request";
+  12 | import {
+  13 |   getFieldInputType,
+
+You're importing a component that needs `useRouter`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+
+./src/app/dashboard/create-request/page.tsx:9:10
+Ecmascript file had an error
+   7 | "use client";
+   8 |
+>  9 | import { useState } from "react";
+     |          ^^^^^^^^
+  10 | import { useRouter } from "next/navigation";
+  11 | import { RequestType } from "@/types/request";
+  12 | import {
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+[00:15:54.506] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:7:1
+Ecmascript file had an error
+   5 | }
+   6 |
+>  7 | "use client";
+     | ^^^^^^^^^^^^^
+   8 |
+   9 | import { useState } from "react";
+  10 | import { useRouter } from "next/navigation";
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:15:54.506] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:10:10
+Ecmascript file had an error
+   8 |
+   9 | import { useState } from "react";
+> 10 | import { useRouter } from "next/navigation";
+     |          ^^^^^^^^^
+  11 | import { RequestType } from "@/types/request";
+  12 | import {
+  13 |   getFieldInputType,
+
+You're importing a component that needs `useRouter`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:15:54.506] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:9:10
+Ecmascript file had an error
+   7 | "use client";
+   8 |
+>  9 | import { useState } from "react";
+     |          ^^^^^^^^
+  10 | import { useRouter } from "next/navigation";
+  11 | import { RequestType } from "@/types/request";
+  12 | import {
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:15:55.203] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:7:1
+Ecmascript file had an error
+   5 | }
+   6 |
+>  7 | "use client";
+     | ^^^^^^^^^^^^^
+   8 |
+   9 | import { useState } from "react";
+  10 | import { useRouter } from "next/navigation";
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:15:55.203] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:10:10
+Ecmascript file had an error
+   8 |
+   9 | import { useState } from "react";
+> 10 | import { useRouter } from "next/navigation";
+     |          ^^^^^^^^^
+  11 | import { RequestType } from "@/types/request";
+  12 | import {
+  13 |   getFieldInputType,
+
+You're importing a component that needs `useRouter`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:15:55.203] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:9:10
+Ecmascript file had an error
+   7 | "use client";
+   8 |
+>  9 | import { useState } from "react";
+     |          ^^^^^^^^
+  10 | import { useRouter } from "next/navigation";
+  11 | import { RequestType } from "@/types/request";
+  12 | import {
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:15:55.203] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:7:1
+Ecmascript file had an error
+   5 | }
+   6 |
+>  7 | "use client";
+     | ^^^^^^^^^^^^^
+   8 |
+   9 | import { useState } from "react";
+  10 | import { useRouter } from "next/navigation";
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:15:55.203] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:10:10
+Ecmascript file had an error
+   8 |
+   9 | import { useState } from "react";
+> 10 | import { useRouter } from "next/navigation";
+     |          ^^^^^^^^^
+  11 | import { RequestType } from "@/types/request";
+  12 | import {
+  13 |   getFieldInputType,
+
+You're importing a component that needs `useRouter`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:15:55.203] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:9:10
+Ecmascript file had an error
+   7 | "use client";
+   8 |
+>  9 | import { useState } from "react";
+     |          ^^^^^^^^
+  10 | import { useRouter } from "next/navigation";
+  11 | import { RequestType } from "@/types/request";
+  12 | import {
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:15:55.660] Browser ERROR   uncaughtError: Error: ./src/app/dashboard/create-request/page.tsx:7:1
+Ecmascript file had an error
+   5 | }
+   6 |
+>  7 | "use client";
+     | ^^^^^^^^^^^^^
+   8 |
+   9 | import { useState } from "react";
+  10 | import { useRouter } from "next/navigation";
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+
+
+[00:15:55.848] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:7:1
+Ecmascript file had an error
+   5 | }
+   6 |
+>  7 | "use client";
+     | ^^^^^^^^^^^^^
+   8 |
+   9 | import { useState } from "react";
+  10 | import { useRouter } from "next/navigation";
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:15:55.848] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:10:10
+Ecmascript file had an error
+   8 |
+   9 | import { useState } from "react";
+> 10 | import { useRouter } from "next/navigation";
+     |          ^^^^^^^^^
+  11 | import { RequestType } from "@/types/request";
+  12 | import {
+  13 |   getFieldInputType,
+
+You're importing a component that needs `useRouter`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:15:55.848] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:9:10
+Ecmascript file had an error
+   7 | "use client";
+   8 |
+>  9 | import { useState } from "react";
+     |          ^^^^^^^^
+  10 | import { useRouter } from "next/navigation";
+  11 | import { RequestType } from "@/types/request";
+  12 | import {
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:15:55.848] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:7:1
+Ecmascript file had an error
+   5 | }
+   6 |
+>  7 | "use client";
+     | ^^^^^^^^^^^^^
+   8 |
+   9 | import { useState } from "react";
+  10 | import { useRouter } from "next/navigation";
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:15:55.848] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:10:10
+Ecmascript file had an error
+   8 |
+   9 | import { useState } from "react";
+> 10 | import { useRouter } from "next/navigation";
+     |          ^^^^^^^^^
+  11 | import { RequestType } from "@/types/request";
+  12 | import {
+  13 |   getFieldInputType,
+
+You're importing a component that needs `useRouter`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:15:55.848] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:9:10
+Ecmascript file had an error
+   7 | "use client";
+   8 |
+>  9 | import { useState } from "react";
+     |          ^^^^^^^^
+  10 | import { useRouter } from "next/navigation";
+  11 | import { RequestType } from "@/types/request";
+  12 | import {
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:15:58.511] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:58.876] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:7:1
+Ecmascript file had an error
+   5 | }
+   6 |
+>  7 | "use client";
+     | ^^^^^^^^^^^^^
+   8 |
+   9 | import { useState } from "react";
+  10 | import { useRouter } from "next/navigation";
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:15:58.876] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:10:10
+Ecmascript file had an error
+   8 |
+   9 | import { useState } from "react";
+> 10 | import { useRouter } from "next/navigation";
+     |          ^^^^^^^^^
+  11 | import { RequestType } from "@/types/request";
+  12 | import {
+  13 |   getFieldInputType,
+
+You're importing a component that needs `useRouter`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:15:58.876] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:9:10
+Ecmascript file had an error
+   7 | "use client";
+   8 |
+>  9 | import { useState } from "react";
+     |          ^^^^^^^^
+  10 | import { useRouter } from "next/navigation";
+  11 | import { RequestType } from "@/types/request";
+  12 | import {
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:15:58.876] Browser ERROR   Failed to fetch requests: {}
+[00:15:58.876] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:7:1
+Ecmascript file had an error
+   5 | }
+   6 |
+>  7 | "use client";
+     | ^^^^^^^^^^^^^
+   8 |
+   9 | import { useState } from "react";
+  10 | import { useRouter } from "next/navigation";
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:15:58.876] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:10:10
+Ecmascript file had an error
+   8 |
+   9 | import { useState } from "react";
+> 10 | import { useRouter } from "next/navigation";
+     |          ^^^^^^^^^
+  11 | import { RequestType } from "@/types/request";
+  12 | import {
+  13 |   getFieldInputType,
+
+You're importing a component that needs `useRouter`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:15:58.876] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:9:10
+Ecmascript file had an error
+   7 | "use client";
+   8 |
+>  9 | import { useState } from "react";
+     |          ^^^^^^^^
+  10 | import { useRouter } from "next/navigation";
+  11 | import { RequestType } from "@/types/request";
+  12 | import {
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:15:58.876] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:7:1
+Ecmascript file had an error
+   5 | }
+   6 |
+>  7 | "use client";
+     | ^^^^^^^^^^^^^
+   8 |
+   9 | import { useState } from "react";
+  10 | import { useRouter } from "next/navigation";
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:15:58.876] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:10:10
+Ecmascript file had an error
+   8 |
+   9 | import { useState } from "react";
+> 10 | import { useRouter } from "next/navigation";
+     |          ^^^^^^^^^
+  11 | import { RequestType } from "@/types/request";
+  12 | import {
+  13 |   getFieldInputType,
+
+You're importing a component that needs `useRouter`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:15:58.876] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:9:10
+Ecmascript file had an error
+   7 | "use client";
+   8 |
+>  9 | import { useState } from "react";
+     |          ^^^^^^^^
+  10 | import { useRouter } from "next/navigation";
+  11 | import { RequestType } from "@/types/request";
+  12 | import {
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:15:58.978] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:7:1
+Ecmascript file had an error
+   5 | }
+   6 |
+>  7 | "use client";
+     | ^^^^^^^^^^^^^
+   8 |
+   9 | import { useState } from "react";
+  10 | import { useRouter } from "next/navigation";
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:15:58.978] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:10:10
+Ecmascript file had an error
+   8 |
+   9 | import { useState } from "react";
+> 10 | import { useRouter } from "next/navigation";
+     |          ^^^^^^^^^
+  11 | import { RequestType } from "@/types/request";
+  12 | import {
+  13 |   getFieldInputType,
+
+You're importing a component that needs `useRouter`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:15:58.978] Browser ERROR   ./src/app/dashboard/create-request/page.tsx:9:10
+Ecmascript file had an error
+   7 | "use client";
+   8 |
+>  9 | import { useState } from "react";
+     |          ^^^^^^^^
+  10 | import { useRouter } from "next/navigation";
+  11 | import { RequestType } from "@/types/request";
+  12 | import {
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:16:30.083] Server  LOG     ✓ Compiled in 103ms

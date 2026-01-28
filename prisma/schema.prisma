@@ -26,6 +26,7 @@ model User {
 // Request model for user requests
 model Request {
   id        Int     @id @default(autoincrement())
+  requestId String  @unique
   title     String
   description String?
   status    String  @default("pending") // pending, approved, rejected
